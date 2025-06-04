@@ -1,0 +1,117 @@
+/* Общие стили ошибок */
+.error {
+    color: #d9534f;
+    font-weight: bold;
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: #f8d7da;
+    border-radius: 4px;
+    border: 1px solid #f5c6cb;
+}
+
+.error-field {
+    border: 2px solid #d9534f !important;
+    background-color: #f8d7da !important;
+}
+
+.messages {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    background-color: #f8d7da;
+    border-radius: 4px;
+}
+
+/* Стили формы */
+.change_forma {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+}
+
+.block_forma {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.fname h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.otsyp {
+    margin: 10px 0;
+}
+
+label {
+    margin: 8px 0;
+    display: block;
+    font-weight: 500;
+    color: #495057;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 5px 0 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Стили для мультиселекта */
+select[multiple] {
+    height: auto;
+    min-height: 100px;
+}
+
+/* Стили для чекбокса согласия */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Адаптивные стили */
+@media screen and (max-width: 768px) {
+    .change_forma {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+    }
+}
