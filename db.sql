@@ -1,4 +1,3 @@
--- db.sql
 CREATE TABLE applications (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     fio VARCHAR(150) NOT NULL,
@@ -24,7 +23,4 @@ CREATE TABLE application_languages (
     FOREIGN KEY (lang_id) REFERENCES languages(id) ON DELETE CASCADE
 );
 
-INSERT INTO languages (name) VALUES 
-('Pascal'), ('C'), ('C++'), ('JavaScript'), ('PHP'), 
-('Python'), ('Java'), ('Haskell'), ('Clojure'), 
-('Prolog'), ('Scala'), ('Go');
+INSERT INTO languages (name) VALUES ('Pascal'), ('C'), ('C++'), ('JavaScript'), ('PHP'), ('Python'), ('Java'), ('Haskel'), ('Clojure'), ('Prolog'), ('Scala'), ('Go');
